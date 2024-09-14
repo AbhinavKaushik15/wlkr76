@@ -76,7 +76,7 @@ const Home = () => {
         </h1>
       </div>
 
-      <button className="flex xl:hidden absolute bottom-[15px] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[190px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
+      <button className="flex xl:hidden fixed bottom-[15px] z-[10000000] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[190px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
           ACHETER
         </button>
 
