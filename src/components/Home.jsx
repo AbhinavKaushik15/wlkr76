@@ -87,8 +87,13 @@ const Home = () => {
       </div>
       <span className="absolute inline-block bg-white bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-[52px]"></span>
       <img
-        className="w-full h-screen object-cover"
+        className="hidden xl:flex w-full h-screen object-cover"
         src="/allimgs/splash_home.jpg"
+        alt=""
+      />
+      <img
+        className="flex xl:hidden w-full h-screen object-cover"
+        src="/allimgs/splash-mobile.jpg"
         alt=""
       />
     </div>
