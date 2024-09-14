@@ -66,8 +66,8 @@ const Home = () => {
   })
 
   return (
-    <div ref={parent} className="max-w-screen-xl mx-auto relative w-full h-screen ">
-      <div className="absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div ref={parent} className="max-w-screen-xl mx-auto relative w-full h-screen">
+      <div className="absolute top-[60.5%] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-white font-[900] tracking-tighter text-[17px]">
           DÉCOUVREZ NOTRE
         </h1>
@@ -76,16 +76,20 @@ const Home = () => {
         </h1>
       </div>
 
+      <button className="flex xl:hidden absolute bottom-[15px] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[190px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
+          ACHETER
+        </button>
+
       <span ref={dark} className="inline-block absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent opacity-0"></span>
       <span ref={shade} className="inline-block absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-white to-transparent opacity-0"></span>
       <img ref={cloud} className='absolute w-full h-full top-[0%] left-1/2 -translate-x-1/2 opacity-0' src="/allimgs/clouds.webp" alt="" />
 
-      <div className="absolute flex flex-col left-1/2 -translate-x-1/2 bottom-[58px] text-white text-2xl">
+      <div className="absolute flex flex-col left-1/2 -translate-x-1/2 bottom-[140px] xl:bottom-[58px] text-white text-2xl">
           <span ref={first}><IoIosArrowDown className="-mb-2" /></span>
           <span ref={second}><IoIosArrowDown className="-mb-2" /></span>
           <span ref={third}><IoIosArrowDown className="" /></span>
       </div>
-      <span className="absolute inline-block bg-white bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-[52px]"></span>
+      <span className="absolute inline-block bg-white bottom-0 left-1/2 -translate-x-1/2 w-[1.3px] xl:w-[1px] h-[130px] xl:h-[52px]"></span>
       <img
         className="hidden xl:flex w-full h-screen object-cover"
         src="/allimgs/splash_home.jpg"
