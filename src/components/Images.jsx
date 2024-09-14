@@ -159,7 +159,7 @@ const Images = () => {
   });
 
   return (
-    <div className="relative w-full h-full bg-white overflow-hidden">
+    <div className="relative max-w-screen-xl mx-auto w-full h-full bg-white overflow-hidden">
       <div ref={parent} className="relative w-full h-[100vh] overflow-hidden">
         <img ref={mainImg} className="absolute w-[29.5vw] h-[50vh] object-cover left-1/2 -translate-x-1/2 top-1/2 -translate-y-[-10%]"
           src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-1.b140c7aa360fee7b7b6af5ba73560924.webp"

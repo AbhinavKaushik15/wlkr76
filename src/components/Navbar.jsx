@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-      <div className="fixed top-14 left-0 z-10 w-full flex items-center justify-between">
+      <div className="fixed top-14 left-0 z-10 max-w-screen-xl mx-auto w-full flex items-center justify-between">
         <img
           className="w-[145.5px] h-[64px] ml-[59.4px]"
           src="/allimgs/logo-wlkr.webp"
