@@ -220,7 +220,7 @@ const Video = () => {
   });
 
   return (
-    <div className="w-full max-w-screen-xl mx-auto overflow-auto">
+    <div className="w-full max-w-screen-xl mx-auto">
       <div ref={parentDiv} className="w-full h-[990vh]">
         <div className="w-full h-screen sticky top-0 left-0">
           <canvas ref={canvasRef} className="w-full h-screen"></canvas>

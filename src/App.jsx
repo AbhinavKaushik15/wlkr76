@@ -10,7 +10,7 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div style={{fontFamily: "'Roboto Flex', sans-serif"}} className="relative w-full min-h-screen overflow-hidden font-[Roboto Flex Thin]">
+    <div style={{fontFamily: "'Roboto Flex', sans-serif"}} className="relative w-full min-h-screen font-[Roboto Flex Thin]">
       <Navbar />
       <Home />
       <Video />
