@@ -223,7 +223,7 @@ const Video = () => {
     <div className="w-full max-w-screen-xl mx-auto">
       <div ref={parentDiv} className="w-full h-[990vh]">
         <div className="w-full h-screen sticky top-0 left-0">
-          <canvas ref={canvasRef} className="w-full h-screen"></canvas>
+          <canvas ref={canvasRef} className="w-full h-screen overflow-hidden"></canvas>
           <span ref={shade} className="inline-block absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-transparent opacity-1"></span>
         </div>
       </div>
