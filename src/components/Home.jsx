@@ -5,6 +5,7 @@ import React, { useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 gsap.registerPlugin(ScrollTrigger);
+
 const Home = () => {
   const first = useRef();
   const second = useRef();
@@ -66,14 +67,13 @@ const Home = () => {
   })
 
   return (
-    <div ref={parent} className="max-w-screen-xl mx-auto relative w-full h-screen">
+    <div className="max-w-screen-xl mx-auto relative w-full h-screen">
       <div className="absolute top-[60.5%] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <h1 className="text-white font-[900] tracking-tighter text-[17px]">
-          DÉCOUVREZ NOTRE
-        </h1>
-        <h1 className="text-white font-[900] tracking-tighter text-[17px]">
-          NOUVELLE SNEAKER
-        </h1>
+      {["DÉCOUVREZ NOTRE", "NOUVELLE SNEAKER"].map((item, index)=>{
+        return <h1 key={index} className="text-white font-[900] tracking-tighter text-[17px]">
+        {item}
+      </h1>
+      })}
       </div>
 
       <button className="flex xl:hidden fixed bottom-[15px] z-[10000000] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[190px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
