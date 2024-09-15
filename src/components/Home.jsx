@@ -68,7 +68,7 @@ const Home = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto relative w-full h-screen">
-      <div className="absolute top-[65%] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-[72%] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
       {["DÉCOUVREZ NOTRE", "NOUVELLE SNEAKER"].map((item, index)=>{
         return <h1 key={index} className="text-white font-[900] tracking-tighter text-[17px]">
         {item}
