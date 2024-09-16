@@ -38,41 +38,103 @@ const Video = () => {
   });
 
   // step 3: Show Image / Load Images on Screen
+
+  // const showImg = (index) => {
+  //   if (index >= 0 && index <= val.maxIndex) {
+  //     const img = imageObject.current[index];
+  //     const canvas = canvasRef.current;
+
+  //     if (canvas && img) {
+  //       let ctx = canvas.getContext("2d");
+  //       if (ctx) {
+  //         canvas.width = window.innerWidth;
+  //         canvas.height = window.innerHeight;
+
+  //         // images ko screen ke barabar set kiya hai
+  //         const scaleX = canvas.width / img.width;
+  //         const scaleY = canvas.height / img.height;
+
+  //         // X & Y ki total / final length
+  //         const scale = Math.max(scaleX, scaleY);
+
+  //         const newWidth = canvas.width - scale + 1;
+  //         const newHeight = canvas.height - scale + 125;
+
+  //         // images ko center krne ke liye
+  //         const offsetX = (canvas.width - newWidth) / 2;
+  //         const offsetY = (canvas.height - newHeight) / 2;
+
+  //         // clear the canvas
+  //         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  //         // for high smoothing / quality of image
+  //         ctx.imageSmoothingEnabled = true;
+  //         ctx.imageSoothingQuality = "high";
+
+  //         // Ab final image draw hogi🫡
+  //         ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight);
+
+  //         setval((prev) => ({
+  //           ...prev,
+  //           currentIndex: index,
+  //         }));
+  //       }
+  //     }
+  //   }
+  // };
+
+  const getResponsiveCanvasDimensions = () => {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+  
+    // Define breakpoints for mobile, tablet, and desktop
+    if (width <= 768) { // Mobile
+      return { canvasWidth: width, canvasHeight: height };
+    } else if (width <= 1024) { // Tablet
+      return { canvasWidth: width, canvasHeight: height };
+    } else { // Desktop
+      return { canvasWidth: width, canvasHeight: height };
+    }
+  };
+  
   const showImg = (index) => {
     if (index >= 0 && index <= val.maxIndex) {
       const img = imageObject.current[index];
       const canvas = canvasRef.current;
-
+  
       if (canvas && img) {
         let ctx = canvas.getContext("2d");
         if (ctx) {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-
-          // images ko screen ke barabar set kiya hai
+          // Get responsive canvas dimensions
+          const { canvasWidth, canvasHeight } = getResponsiveCanvasDimensions();
+  
+          canvas.width = canvasWidth;
+          canvas.height = canvasHeight;
+  
+          // Adjust the scale based on the responsive dimensions
           const scaleX = canvas.width / img.width;
           const scaleY = canvas.height / img.height;
-
-          // X & Y ki total / final length
+  
+          // Choose the scaling strategy
           const scale = Math.max(scaleX, scaleY);
-
-          const newWidth = canvas.width - scale + 1;
-          const newHeight = canvas.height - scale + 125;
-
-          // images ko center krne ke liye
+  
+          const newWidth = img.width * scale;
+          const newHeight = img.height * scale;
+  
+          // Center the image on the canvas
           const offsetX = (canvas.width - newWidth) / 2;
           const offsetY = (canvas.height - newHeight) / 2;
-
-          // clear the canvas
+  
+          // Clear canvas before drawing
           ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-          // for high smoothing / quality of image
+  
+          // Enable high-quality image rendering
           ctx.imageSmoothingEnabled = true;
-          ctx.imageSoothingQuality = "high";
-
-          // Ab final image draw hogi🫡
+          ctx.imageSmoothingQuality = "high";
+  
+          // Draw the image on the canvas
           ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight);
-
+  
           setval((prev) => ({
             ...prev,
             currentIndex: index,
@@ -81,6 +143,7 @@ const Video = () => {
       }
     }
   };
+  
 
   const parentDiv = useRef(null);
   const shade = useRef();
@@ -222,7 +285,7 @@ const Video = () => {
 
   return (
     <div className="w-full">
-      <div ref={parentDiv} className="w-full h-[990vh] max-w-screen-xl mx-auto">
+      <div ref={parentDiv} className="w-full h-[990vh] max-w-screen-xl mx-auto overflow-hidden bg-red-400">
         <div className="w-full h-screen sticky top-0 left-0">
           <canvas ref={canvasRef} className="w-full h-screen overflow-hidden"></canvas>
           <span ref={shade} className="inline-block absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-transparent opacity-1"></span>
