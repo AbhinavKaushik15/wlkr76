@@ -111,8 +111,9 @@ const Video = () => {
       scrollTrigger: {
         trigger: parentDiv.current,
         start: "top top",
-        scrub: 2,
         end: "bottom bottom",
+        pin: true,
+        scrub: 2,
       },
     });
 
