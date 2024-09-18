@@ -15,7 +15,7 @@ function App() {
       <Home />
       <Video />
       <Shoes />
-      {/* <Images /> */}
+      <Images />
     </div>
   );
 }

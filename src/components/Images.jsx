@@ -182,7 +182,7 @@ const Images = () => {
             alt=""
           />
           <h1 ref={head4} className="absolute -top-20 left-[-65%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
-            DANS ON
+            DANS UN
           </h1>
           <h1 ref={head5} className="absolute top-[30%] right-[-52%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             CONFORT

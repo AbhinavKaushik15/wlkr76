@@ -291,8 +291,8 @@ const Video = () => {
         </div>
       </div>
 
-      <div ref={parentRail} className="relative w-full h-screen max-w-screen-xl mx-auto bg-white overflow-hidden">
-        <img className="flex lg:hidden w-full h-full object-contain md:object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
+      <div ref={parentRail} className="relative w-full min-h-screen max-w-screen-xl mx-auto bg-white overflow-hidden">
+        <img className="flex lg:hidden w-full h-full object-contain mt-[13.9vh] object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
         <div ref={roll1} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-28">
           <img
             className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"

@@ -202,7 +202,7 @@ const Shoes = () => {
           <svg
               viewBox="0 0 311 191"
               fill="none"
-              className="w-[68.9vw] absolute top-1/2 -translate-y-[32%] left-1/2 -translate-x-1/2"
+              className="w-[67vw] absolute top-[15.9vh] left-1/2 -translate-x-1/2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask
@@ -230,10 +230,10 @@ const Shoes = () => {
             loop = {[true]}
             pagination={{clickable: true}}
             modules={[Pagination]}
-            className="mySwiper pt-[41vw]"
+            className="mySwiper"
             >
             <SwiperSlide className="ml-[25vw]">
-              <img className="w-[100vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />
+              <img className="w-[100vh]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />
               <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
               <p className="ml-[18.1vw] text-sm tracking-wider">Violet</p>
 
@@ -408,7 +408,7 @@ const Shoes = () => {
         <div ref={loader} className="hidden xl:flex absolute z-[9999] w-0 h-[6px] bg-[#545841] left-0 top-[99vh] overflow-hidden"></div>
       </div>
 
-      <div className="w-full h-screen">
+      <div className="mobShowSwiperSection w-full h-screen">
 
       </div>
     </div>
