@@ -291,10 +291,11 @@ const Video = () => {
         </div>
       </div>
 
-      <div ref={parentRail} className="w-full h-screen bg-white overflow-hidden">
-        <div ref={roll1} className="w-full h-[25%] flex items-center gap-10 -ml-28">
+      <div ref={parentRail} className="relative w-full h-screen max-w-screen-xl mx-auto bg-white overflow-hidden">
+        <img className="flex lg:hidden w-full h-full object-contain md:object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
+        <div ref={roll1} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-28">
           <img
-            className="w-[307px] h-[103px] object-cover flex-shrink-0"
+            className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-1.f27f2e44f0b09b5b4e3864bb35fe99a4.jpg"
             alt=""
           />
@@ -303,25 +304,25 @@ const Video = () => {
           </h1>
 
           <img
-            className="w-[307px] h-[103px] object-cover flex-shrink-0"
+            className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-2.b1d4272156170297d10a5a60965dbb82.jpg"
             alt=""
           />
 
           <img
-            className="w-[307px] h-[103px] object-cover flex-shrink-0"
+            className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-3.b9bc6bbef9f511fb5352eb2b628f82e3.jpg"
             alt=""
           />
 
           <img
-            className="w-[307px] h-[103px] object-cover flex-shrink-0"
+            className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-4.8dd753c719d788ed76ef6b6acbd776ff.jpg"
             alt=""
           />
         </div>
 
-        <div ref={roll2} className="w-full h-[25%] flex items-center gap-10 ml-[41.5px]">
+        <div ref={roll2} className="hidden w-full h-[25vh] lg:flex items-center gap-10 ml-[41.5px]">
           <img
             className="w-[307px] h-[103px] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-5.c7be62540b36c08bcbfde656ea89f089.jpg"
@@ -345,7 +346,7 @@ const Video = () => {
           />
         </div>
 
-        <div ref={roll3} className="w-full h-[25%] flex items-center gap-10 -ml-[63px]">
+        <div ref={roll3} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-[63px]">
           <img
             className="w-[307px] h-[103px] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-9.ad839066400db0785d319a39aeb54b96.jpg"
@@ -379,7 +380,7 @@ const Video = () => {
           />
         </div>
 
-        <div ref={roll4} className="w-full h-[25%] flex items-center gap-10 -ml-2">
+        <div ref={roll4} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-2">
           <img
             className="w-[307px] h-[103px] object-cover flex-shrink-0"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/rail-13.31c04c133654910233f64dec54f5520f.jpg"

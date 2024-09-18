@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <Video />
-      {/* <Shoes /> */}
+      <Shoes />
       {/* <Images /> */}
     </div>
   );
