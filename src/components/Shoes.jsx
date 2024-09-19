@@ -120,7 +120,7 @@ const Shoes = () => {
   return (
     <div className="w-full">
       <div className="w-full max-w-screen-xl mx-auto">
-      <div ref={child1} className="relative w-full h-[100vh] bg-white flex pt-[105px] justify-center gap-14">
+      <div ref={child1} className="relative w-full h-screen bg-white flex pt-[105px] justify-center gap-14">
         {seventySix.map((items, index)=>{
           return <div key={index} className="hidden relative left h-[80vh] w-[24vw] xl:flex flex-col items-center">
           <div onMouseEnter={()=>sethover(index)} onMouseLeave={()=>sethover(null)} className="76kiki relative mt-3 w-full h-52">
@@ -198,11 +198,11 @@ const Shoes = () => {
         </div>
         })}
 
-        <div className="relative items-center justify-center w-[100vw] h-screen xl:hidden flex overflow-hidden">
+        <div className="relative items-center justify-center w-[100vh] h-screen xl:hidden flex overflow-hidden">
           <svg
               viewBox="0 0 311 191"
               fill="none"
-              className="w-[67vw] absolute top-[16vh] left-1/2 -translate-x-1/2"
+              className="w-[67vw] absolute top-[14.6vw] left-1/2 -translate-x-1/2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask
