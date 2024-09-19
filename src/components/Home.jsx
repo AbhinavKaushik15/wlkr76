@@ -89,7 +89,7 @@ const Home = () => {
   return (
     <div className="w-full">
       <div className="max-w-screen-xl mx-auto relative w-full h-screen">
-        <div className="absolute top-[60.5vh] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute bottom-[30vw] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
           {["DÉCOUVREZ NOTRE", "NOUVELLE SNEAKER"].map((item, index) => {
             return (
               <h1
