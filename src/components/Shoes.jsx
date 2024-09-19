@@ -331,7 +331,7 @@ const Shoes = () => {
               autoplay = {{
                 delay: 9000,
               }}
-              className="absolute w-full h-[50vh] bg-white top-[24vh]"
+              className="absolute w-full h-[58vw] bg-white top-[24vh]"
             >
               <SwiperSlide ref={slide1} className="w-[33.3vw] h-full flex flex-col items-center">
               <h1 className="text-sm font-[900] tracking-tighter text-[#7E8368]">CRAMPONS EN X</h1>
