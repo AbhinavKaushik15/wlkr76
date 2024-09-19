@@ -331,7 +331,7 @@ const Shoes = () => {
               autoplay = {{
                 delay: 9000,
               }}
-              className="absolute w-full h-[62vw] bg-white top-[24vh]"
+              className="absolute w-full h-[60vw] bg-white top-[24vh]"
             >
               <SwiperSlide ref={slide1} className="w-[33.3vw] h-full flex flex-col items-center">
               <h1 className="text-sm font-[900] tracking-tighter text-[#7E8368]">CRAMPONS EN X</h1>
@@ -341,8 +341,8 @@ const Shoes = () => {
                   alt=""
                 />
 
-                <h1 className="font-[sans_serif] text-xs tracking-[0.8px] w-[80%] text-center mt-7">
-                  Semelle extérieure en caoutchouc avec crapmons <br />
+                <h1 className="font-[sans_serif] text-xs tracking-[0.8px] w-[60vw] text-center mt-7">
+                  Semelle extérieure en caoutchouc avec crapmons
                   pour une accroche sur toutes les surfaces
                 </h1>
               </SwiperSlide>
