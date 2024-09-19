@@ -408,8 +408,60 @@ const Shoes = () => {
         <div ref={loader} className="hidden xl:flex absolute z-[9999] w-0 h-[6px] bg-[#545841] left-0 top-[99vh] overflow-hidden"></div>
       </div>
 
-      <div className="mobShowSwiperSection w-full h-screen">
+      <div className="relative flex xl:hidden mobShowSwiperSection w-full h-screen">
+        <div className="absolute w-full h-[17.1vh] bg-yellow-400 text-center">
+          <img className="w-full h-full object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-1-full.81784bff1664822c59280a8487bf463a.jpg" alt="" />
+        </div>
 
+        <Swiper
+              pagination={pagination}
+              modules={[Autoplay, Pagination]}
+              loop={[true]}
+              autoplay = {{
+                delay: 9000,
+              }}
+              className="absolute w-full h-[55vh] bg-white top-[24vh]"
+            >
+              <SwiperSlide ref={slide1} className="w-[33.3vw] h-full flex flex-col items-center">
+              <h1 className="text-sm font-[900] tracking-tighter text-[#7E8368]">CRAMPONS EN X</h1>
+                <img
+                  className="w-[60%] mt-5"
+                  src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-shoe.bafd538f127edd461229eea3f1ab7a99.png"
+                  alt=""
+                />
+
+                <h1 className="font-[sans_serif] text-xs tracking-[0.8px] w-[80%] text-center mt-7">
+                  Semelle extérieure en caoutchouc avec crapmons <br />
+                  pour une accroche sur toutes les surfaces
+                </h1>
+              </SwiperSlide>
+
+              <SwiperSlide ref={slide2} className="w-[33.vw] h-full flex flex-col items-center">
+              <h1 className="text-sm font-[900] tracking-tighter text-[#7E8368]">COMPOSANT RIPSTOP</h1>
+                <img
+                  className="w-[60%] mt-5"
+                  src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-shoe.bafd538f127edd461229eea3f1ab7a99.png"
+                  alt=""
+                />
+
+                <h1 className="font-[sans_serif] text-xs tracking-[0.8px] w-[80%] text-center mt-7">
+                  Naturellement résistant
+                </h1>
+              </SwiperSlide>
+
+              <SwiperSlide ref={slide3} className="w-[33.3vw] h-full flex flex-col items-center">
+              <h1 className="text-sm font-[900] tracking-tighter text-[#7E8368]">MOUSSE M FOAM</h1>
+                <img
+                  className="w-[60%] mt-5"
+                  src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-shoe.bafd538f127edd461229eea3f1ab7a99.png"
+                  alt=""
+                />
+
+                <h1 className="font-[sans_serif] text-xs tracking-[0.8px] w-[80%] text-center mt-7">
+                  Semelle intermédiaire avec un amorti moelleux <br /> et durable
+                </h1>
+              </SwiperSlide>
+        </Swiper>
       </div>
     </div>
     </div>

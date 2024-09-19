@@ -182,7 +182,7 @@ const Images = () => {
             alt=""
           />
           <h1 ref={head4} className="absolute -top-20 left-[-65%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
-            DANS UN
+            DANS ON
           </h1>
           <h1 ref={head5} className="absolute top-[30%] right-[-52%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             CONFORT
@@ -194,7 +194,7 @@ const Images = () => {
 
         <div ref={parentFooter} className="absolute w-full h-[100%] left-1/2 -translate-x-1/2 top-[81.8%] items-center">
           <img
-            className="absolute w-full h-screen object-cover"
+            className="absolute w-full h-screen scale-[2.47] xl:scale-[1] object-cover pb-[10.4vw] xl:pb-0"
           src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/bg.6f060e16cb5802b780a013714307f463.jpg"
           alt=""
           />
@@ -205,7 +205,7 @@ const Images = () => {
             freeMode={true}
             pagination={{ clickable: true }}
             modules={[FreeMode, Pagination]}
-            className="mySwiper pt-[14.8%]"
+            className="hidden xl:flex mySwiper pt-[14.8%]"
           >
             {[{src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-1.1b97614d41e5837270d6552372c3c84b.webp", marginLeft: "25%"},
             {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-2.b859e947584b0d00529b89cd390c4479.webp"},
@@ -219,7 +219,7 @@ const Images = () => {
             {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel10.750dbb71558a5a65cf5a41226c5dc703.webp"}].map((items, index)=>{
               return <SwiperSlide key={index} style={{marginLeft: items.marginLeft}}>
                       <img
-                        className="w-[34.6vw] h-[54.4vh] object-cover"
+                        className="w-[442.88px] h-[318.24px] object-cover"
                         src={items.src}
                         alt=""
                       />
@@ -227,9 +227,37 @@ const Images = () => {
             })}
           </Swiper>
 
-          <div className="absolute mt-[3.25%] flex items-center justify-between px-[6%] w-full">
-          <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
-          <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={15}
+            freeMode={true}
+            pagination={{ clickable: true }}
+            modules={[FreeMode, Pagination]}
+            className="flex xl:hidden mySwiper w-[100vw] pt-[22.5%] xl:pt-[14.8%] pr-60"
+          >
+            {[{src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-1.1b97614d41e5837270d6552372c3c84b.webp", marginLeft: "18vw"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-2.b859e947584b0d00529b89cd390c4479.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-3.c8764dfeae4caa18566b0406b83157b4.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel4.919df7697cd32f0533a442fe4544edd2.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel5.b7b62578992d023fab4c7f6fab3729eb.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel6.29578aa0120d18374870a5663dc2809c.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel7.f95ef802c7d093c92de3fdc3113587a3.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel8.74b29e0fe4b42eb9a386416a0de8a620.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel9.794351f5446e05e7cefa97702be6528d.webp"},
+            {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/Carousel10.750dbb71558a5a65cf5a41226c5dc703.webp"}].map((items, index)=>{
+              return <SwiperSlide key={index} style={{marginLeft: items.marginLeft}} className="w-[100vw]">
+                      <img
+                        className="w-[100vw] h-[305px] object-cover"
+                        src={items.src}
+                        alt=""
+                      />
+                    </SwiperSlide>
+            })}
+          </Swiper>
+
+          <div className="absolute mt-[17.5vh] xl:mt-[3.25%] flex flex-col items-center justify-between px-[6%] w-full">
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] xl:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] xl:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
           </div>
         </div>
     </div>
