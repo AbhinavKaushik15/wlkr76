@@ -3,9 +3,9 @@ import React from 'react';
 const Navbar = () => {
   return (
       <div className='w-full'>
-        <div className="fixed px-[29px] py-5 md:px-[60px] md:py-[55px] z-10 max-w-screen-xl mx-auto w-full flex items-center justify-between">
+        <div className="fixed px-[29px] py-5 lg:px-[60px] lg:py-[55px] z-10 max-w-screen-xl mx-auto w-full flex items-center justify-between">
         <img
-          className="w-[95px] md:w-[145.5px] h-[42px] md:h-[64px]"
+          className="w-[95px] lg:w-[145.5px] h-[42px] lg:h-[64px]"
           src="/allimgs/logo-wlkr.webp"
           alt=""
         />

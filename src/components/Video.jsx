@@ -418,7 +418,7 @@ const Video = () => {
         </div>
       </div>
 
-      <div className="relative items-center justify-center w-full h-[90vh] xl:hidden flex overflow-hidden">
+      <div className="flex relative items-center justify-center w-full h-screen md:hidden overflow-hidden">
           <svg
               viewBox="0 0 311 191"
               fill="none"

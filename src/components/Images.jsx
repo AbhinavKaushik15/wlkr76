@@ -161,7 +161,7 @@ const Images = () => {
   return (
     <div className="w-full">
       <div className="relative max-w-screen-xl mx-auto w-full h-full bg-white overflow-hidden">
-        <div ref={parent} className="relative w-full h-[100vh] overflow-hidden">
+        <div ref={parent} className="hidden relative w-full md:flex h-[100vh] overflow-hidden">
           <img ref={mainImg} className="absolute w-[29.5vw] h-[50vh] object-cover left-1/2 -translate-x-1/2 top-1/2 -translate-y-[-10%]"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-1.b140c7aa360fee7b7b6af5ba73560924.webp"
             alt=""
@@ -169,32 +169,32 @@ const Images = () => {
           <img ref={middleImg} className="absolute w-[33.57vw] h-[90vh] object-cover left-1/2 -translate-x-1/2 top-[150%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-2.cfe8225bd6e52170e551f8a5739b3492.webp"
             alt=""
           />
-          <h1 ref={head1} className="absolute -top-20 left-[-65%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+          <h1 ref={head1} className="absolute -top-20 left-[-800px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             ÉXPLOREZ DE
           </h1>
-          <h1 ref={head2} className="absolute top-[30%] right-[-52%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+          <h1 ref={head2} className="absolute top-[30%] right-[-700px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             NOUVEAUX
           </h1>
-          <h1 ref={head3} className="absolute -bottom-24 left-[-50%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+          <h1 ref={head3} className="absolute -bottom-24 left-[-600px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             HORIZONS
           </h1>
           <img ref={lastImg} className="absolute w-[33.57vw] h-[90vh] object-cover left-1/2 -translate-x-1/2 top-[120%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-3.6e5425847547c4b4bf037ca5d760fa5f.webp"
             alt=""
           />
-          <h1 ref={head4} className="absolute -top-20 left-[-65%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+          <h1 ref={head4} className="absolute -top-20 left-[-800px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             DANS ON
           </h1>
-          <h1 ref={head5} className="absolute top-[30%] right-[-52%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+          <h1 ref={head5} className="absolute top-[30%] right-[-700px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             CONFORT
           </h1>
-          <h1 ref={head6} className="absolute -bottom-24 left-[-50%] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+          <h1 ref={head6} className="absolute -bottom-24 left-[-600px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             ABSOLU
           </h1>
         </div>
 
         <div ref={parentFooter} className="absolute w-full h-[100%] left-1/2 -translate-x-1/2 top-[81.8%] items-center">
           <img
-            className="absolute w-full h-screen scale-[2.47] xl:scale-[1] object-cover pb-[10.4vw] xl:pb-0"
+            className="absolute w-full h-screen scale-[2.47] md:scale-[1] object-cover pb-[10.4vw] md:pb-0"
           src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/bg.6f060e16cb5802b780a013714307f463.jpg"
           alt=""
           />
@@ -205,7 +205,7 @@ const Images = () => {
             freeMode={true}
             pagination={{ clickable: true }}
             modules={[FreeMode, Pagination]}
-            className="hidden w-[100vw] xl:flex mySwiper pt-[14.8%]"
+            className="desktop hidden w-[100vw] md:flex mySwiper pt-[14.8%]"
           >
             {[{src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-1.1b97614d41e5837270d6552372c3c84b.webp", marginLeft: "25%"},
             {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-2.b859e947584b0d00529b89cd390c4479.webp"},
@@ -227,13 +227,13 @@ const Images = () => {
             })}
           </Swiper>
 
-          {/* <Swiper
+          <Swiper
             slidesPerView={1}
             spaceBetween={15}
             freeMode={true}
             pagination={{ clickable: true }}
             modules={[FreeMode, Pagination]}
-            className="flex xl:hidden mySwiper w-[100vw] pt-[22.5%] xl:pt-[14.8%] pr-60"
+            className="mobile flex md:hidden mySwiper w-[100vw] pt-[22.5%] md:pt-[14.8%] pr-60"
           >
             {[{src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-1.1b97614d41e5837270d6552372c3c84b.webp", marginLeft: "18vw"},
             {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-2.b859e947584b0d00529b89cd390c4479.webp"},
@@ -253,11 +253,11 @@ const Images = () => {
                       />
                     </SwiperSlide>
             })}
-          </Swiper> */}
+          </Swiper>
 
-          <div className="absolute mt-[17.5vh] xl:mt-[3.25%] flex flex-col xl:flex-row items-center justify-between px-[6%] w-full">
-            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] xl:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
-            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] xl:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
+          <div className="absolute mt-[17.5vh] lg:mt-20 xl:mt-[3.25%] flex flex-col md:flex-row items-center justify-between px-[6%] w-full">
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] md:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] md:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
           </div>
         </div>
     </div>

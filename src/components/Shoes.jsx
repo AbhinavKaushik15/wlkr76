@@ -125,11 +125,11 @@ const Shoes = () => {
           return <div key={index} className="relative left h-[80vh] w-[24vw] flex flex-col items-center">
           <div onMouseEnter={()=>sethover(index)} onMouseLeave={()=>sethover(null)} className="76kiki relative mt-3 w-full h-52">
             <svg
-              width="248"
-              height="128"
+              // width="248"
+              // height="128"
               viewBox="0 0 311 191"
               fill="none"
-              className="absolute top-0 left-1/2 -translate-x-1/2"
+              className="absolute w-[16.3vw] top-0 left-1/2 -translate-x-1/2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask
@@ -137,11 +137,11 @@ const Shoes = () => {
                 maskUnits="userSpaceOnUse"
                 x="22"
                 y="13"
-                width="269"
-                height="164"
+                // width="248"
+                // height="128"
                 fill="black"
               >
-                <rect fill="white" x="22" y="13" width="269" height="164" />
+                <rect fill="white" x="22" y="13" />
                 <path d="M43.959 173L92.4062 59.4551H23.7637V16.5938H149.125V55.9102L102.289 173H43.959ZM159.223 109.943V98.2344C159.223 72.4531 167.709 52.043 184.682 37.0039C201.726 21.9648 225.896 14.4453 257.191 14.4453H271.693V58.0586H259.447C244.193 58.0586 232.807 61.4245 225.287 68.1562C217.839 74.8164 214.115 89.6406 214.115 112.629V114.777C214.115 126.236 215.082 133.254 217.016 135.832C218.949 138.339 221.42 139.592 224.428 139.592C227.292 139.592 229.584 138.518 231.303 136.369C233.093 134.221 233.988 127.668 233.988 116.711C233.988 110.767 233.236 106.398 231.732 103.605C230.3 100.812 227.973 99.416 224.75 99.416C221.742 99.416 219.2 100.562 217.123 102.854C215.118 105.074 214.115 108.296 214.115 112.521L208.852 112.414C208.852 98.8789 212.79 88.6738 220.668 81.7988C228.617 74.9238 237.712 71.4863 247.953 71.4863C260.056 71.4863 269.939 75.4251 277.602 83.3027C285.264 91.1087 289.096 102.854 289.096 118.537C289.096 136.441 282.794 150.37 270.189 160.324C257.585 170.207 242.188 175.148 223.998 175.148C203.874 175.148 188.048 169.813 176.518 159.143C164.988 148.4 159.223 132.001 159.223 109.943Z" />
               </mask>
               <path
@@ -153,11 +153,11 @@ const Shoes = () => {
             <motion.svg
               initial = {{opacity: 0}}
               animate = {hover === index ? ({opacity: 1}) : ({opacity: 0})}
-              width="248"
-              height="128"
+              // width="248"
+              // height="128"
               viewBox="0 0 311 191"
               fill="none"
-              className="absolute top-0 left-1/2 -translate-x-1/2"
+              className="absolute w-[16.3vw] top-0 left-1/2 -translate-x-1/2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask
@@ -165,11 +165,11 @@ const Shoes = () => {
                 maskUnits="userSpaceOnUse"
                 x="20"
                 y="11"
-                width="273"
-                height="168"
+                // width="273"
+                // height="168"
                 fill="black"
               >
-                <rect fill="white" x="20" y="11" width="273" height="168" />
+                <rect fill="white" x="20" y="11" />
                 <path d="M43.959 173L92.4062 59.4551H23.7637V16.5938H149.125V55.9102L102.289 173H43.959ZM159.223 109.943V98.2344C159.223 72.4531 167.709 52.043 184.682 37.0039C201.726 21.9648 225.896 14.4453 257.191 14.4453H271.693V58.0586H259.447C244.193 58.0586 232.807 61.4245 225.287 68.1562C217.839 74.8164 214.115 89.6406 214.115 112.629V114.777C214.115 126.236 215.082 133.254 217.016 135.832C218.949 138.339 221.42 139.592 224.428 139.592C227.292 139.592 229.584 138.518 231.303 136.369C233.093 134.221 233.988 127.668 233.988 116.711C233.988 110.767 233.236 106.398 231.732 103.605C230.3 100.812 227.973 99.416 224.75 99.416C221.742 99.416 219.2 100.562 217.123 102.854C215.118 105.074 214.115 108.296 214.115 112.521L208.852 112.414C208.852 98.8789 212.79 88.6738 220.668 81.7988C228.617 74.9238 237.712 71.4863 247.953 71.4863C260.056 71.4863 269.939 75.4251 277.602 83.3027C285.264 91.1087 289.096 102.854 289.096 118.537C289.096 136.441 282.794 150.37 270.189 160.324C257.585 170.207 242.188 175.148 223.998 175.148C203.874 175.148 188.048 169.813 176.518 159.143C164.988 148.4 159.223 132.001 159.223 109.943Z" />
               </mask>
               <path
@@ -319,7 +319,7 @@ const Shoes = () => {
         <div ref={loader} className="hidden xl:flex absolute z-[9999] w-0 h-[6px] bg-[#545841] left-0 top-[99vh] overflow-hidden"></div>
       </div>
 
-      <div className="relative flex xl:hidden mobShowSwiperSection w-full h-screen">
+      <div className="relative flex md:hidden mobShowSwiperSection w-full h-screen">
         <div className="absolute w-full h-[17.1vh] bg-yellow-400 text-center">
           <img className="w-full h-full object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-1-full.81784bff1664822c59280a8487bf463a.jpg" alt="" />
         </div>
