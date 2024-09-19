@@ -89,7 +89,7 @@ const Home = () => {
   return (
     <div className="w-full">
       <div className="max-w-screen-xl mx-auto relative w-full h-screen">
-        <div className="absolute bottom-[32.5vh] xl:top-[74%] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute bottom-[32.5vh] lg:top-[70.5vh] leading-5 left-1/2 -translate-x-1/2 -translate-y-1/2">
           {["DÉCOUVREZ NOTRE", "NOUVELLE SNEAKER"].map((item, index) => {
             return (
               <h1
@@ -102,7 +102,7 @@ const Home = () => {
           })}
         </div>
 
-        <button className="flex lg:hidden fixed bottom-[15px] z-[10000000] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[170px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
+        <button className="flex items-center justify-center lg:hidden fixed bottom-[15px] z-[10000000] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[100px] w-[94.5vw] font-[800] rounded-full text-[18px] tracking-tighter">
           ACHETER
         </button>
 
@@ -121,7 +121,7 @@ const Home = () => {
           alt=""
         />
 
-        <div className="absolute flex flex-col left-1/2 -translate-x-1/2 bottom-[140px] md:bottom-[58px] text-white text-2xl">
+        <div className="absolute flex flex-col left-1/2 -translate-x-1/2 bottom-[140px] lg:bottom-[58px] text-white text-2xl">
           <span ref={first}>
             <IoIosArrowDown className="-mb-2" />
           </span>
@@ -132,7 +132,7 @@ const Home = () => {
             <IoIosArrowDown className="" />
           </span>
         </div>
-        <span className="absolute inline-block bg-white bottom-0 left-1/2 -translate-x-1/2 w-[1.3px] xl:w-[1px] h-[130px] md:h-[52px]"></span>
+        <span className="absolute inline-block bg-white bottom-0 left-1/2 -translate-x-1/2 w-[1.3px] xl:w-[1px] h-[130px] md:h-[130px] lg:h-[52px]"></span>
         <img
           className="hidden sm:flex  w-full h-screen object-cover"
           src="/allimgs/splash_home.jpg"
