@@ -202,7 +202,7 @@ const Shoes = () => {
           <svg
               viewBox="0 0 311 191"
               fill="none"
-              className="w-[67vw] absolute top-[15.9vh] left-1/2 -translate-x-1/2"
+              className="w-[67vw] absolute top-[16vh] left-1/2 -translate-x-1/2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask
@@ -230,11 +230,11 @@ const Shoes = () => {
             loop = {[true]}
             pagination={{clickable: true}}
             modules={[Pagination]}
-            className="mySwiper"
+            className="absolute w-full top-[23vw] mySwiper"
             >
             <SwiperSlide className="ml-[25vw]">
               <img className="w-[100vh]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />
-              <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
+              <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>
               <p className="ml-[18.1vw] text-sm tracking-wider">Violet</p>
 
               <p className="text-xs pt-6 ml-[20.5vw]">76€</p>
@@ -243,7 +243,7 @@ const Shoes = () => {
             <SwiperSlide className="ml-[25vw]">
               <img className="w-[100vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-kaki.41175d1d470cc18fea4039d9d4a2bdca.webp" alt="" />
 
-              <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
+              <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>
               <p className="ml-[19.5vw] text-sm tracking-wider">Kaki</p>
 
               <p className="text-xs pt-6 ml-[20.5vw]">76€</p>
@@ -252,7 +252,7 @@ const Shoes = () => {
             <SwiperSlide className="ml-[26vw]">
               <img className="w-[100vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-white.e88209e1cebbe8c106738c487b070a47.webp" alt="" />
 
-              <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
+              <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>
               <p className="ml-[18.8vw] text-sm tracking-wider">Beige</p>
 
               <p className="text-xs pt-6 ml-[20.5vw]">76€</p>
@@ -260,7 +260,7 @@ const Shoes = () => {
 
             <SwiperSlide className="ml-[25.5vw]">
               <img className="w-[100vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />
-              <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
+              <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>
               <p className="ml-[18.1vw] text-sm tracking-wider">Violet</p>
 
               <p className="text-xs pt-6 ml-[20.5vw]">76€</p>
@@ -269,7 +269,7 @@ const Shoes = () => {
             <SwiperSlide className="ml-[25.5vw]">
               <img className="w-[100vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-kaki.41175d1d470cc18fea4039d9d4a2bdca.webp" alt="" />
 
-              <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
+              <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>
               <p className="ml-[19.5vw] text-sm tracking-wider">Kaki</p>
 
               <p className="text-xs pt-6 ml-[20.5vw]">76€</p>
@@ -278,7 +278,7 @@ const Shoes = () => {
             <SwiperSlide className="ml-[25vw]">
               <img className="w-[100vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-white.e88209e1cebbe8c106738c487b070a47.webp" alt="" />
 
-              <h1 className="ml-[17vw] text-sm pt-2">WLKR 76</h1>
+              <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>
               <p className="ml-[18.8vw] text-sm tracking-wider">Beige</p>
 
               <p className="text-xs pt-6 ml-[20.5vw]">76€</p>
