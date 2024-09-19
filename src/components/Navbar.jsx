@@ -9,7 +9,7 @@ const Navbar = () => {
           src="/allimgs/logo-wlkr.webp"
           alt=""
         />
-        <button className="hidden xl:flex bg-[#897460] text-white py-[11.5px] px-[76px] font-[800] rounded-full text-[18px] tracking-tighter text-center xl:-mr-[1.5px] xl:mt-1">
+        <button className="hidden lg:flex xl:flex bg-[#897460] text-white py-[11.5px] px-[76px] font-[800] rounded-full text-[18px] tracking-tighter text-center xl:-mr-[1.5px] xl:mt-1">
           ACHETER
         </button>
       </div>

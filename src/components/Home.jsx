@@ -102,7 +102,7 @@ const Home = () => {
           })}
         </div>
 
-        <button className="flex xl:hidden fixed bottom-[15px] z-[10000000] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[170px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
+        <button className="flex lg:hidden fixed bottom-[15px] z-[10000000] left-1/2 -translate-x-1/2 bg-[#897460] text-white py-[11.5px] px-[170px] font-[800] rounded-full text-[18px] tracking-tighter text-center">
           ACHETER
         </button>
 
@@ -134,7 +134,7 @@ const Home = () => {
         </div>
         <span className="absolute inline-block bg-white bottom-0 left-1/2 -translate-x-1/2 w-[1.3px] xl:w-[1px] h-[130px] xl:h-[52px]"></span>
         <img
-          className="hidden xl:flex w-full h-screen object-cover"
+          className="hidden sm:flex  w-full h-screen object-cover"
           src="/allimgs/splash_home.jpg"
           alt=""
         />
