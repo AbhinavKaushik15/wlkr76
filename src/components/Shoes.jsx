@@ -118,8 +118,8 @@ const Shoes = () => {
   const [hover, sethover] = useState(null);
 
   return (
-    <div className="w-full">
-      <div className="w-full max-w-screen-xl mx-auto overflow-hidden">
+    <div className="w-full max-w-screen-xl mx-auto">
+      <div className="w-full overflow-hidden">
       <div ref={child1} className="hidden relative w-full h-screen bg-white lg:flex pt-[105px] justify-center gap-14">
         {seventySix.map((items, index)=>{
           return <div key={index} className="relative left h-[80vw] w-[24vw] flex flex-col items-center gap-[5.4vw]">

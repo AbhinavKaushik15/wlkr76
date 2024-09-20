@@ -290,15 +290,15 @@ const Video = () => {
   });
 
   return (
-    <div className="w-full">
-      <div ref={parentDiv} className="w-full h-[990vh] max-w-screen-xl mx-auto">
+    <div className="w-full max-w-screen-xl mx-auto">
+      <div ref={parentDiv} className="w-full h-[990vh]">
         <div className="w-full h-screen sticky top-0 left-0">
           <canvas ref={canvasRef} className="w-full h-screen"></canvas>
           <span ref={shade} className="inline-block absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-transparent opacity-1"></span>
         </div>
       </div>
 
-      <div ref={parentRail} className="relative w-full min-h-screen max-w-screen-xl mx-auto bg-white overflow-hidden">
+      <div ref={parentRail} className="relative w-full min-h-screen bg-white overflow-hidden">
         <img className="flex lg:hidden w-full h-full mt-[13.9vh] object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
         <div ref={roll1} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-28">
           <img
@@ -418,7 +418,7 @@ const Video = () => {
         </div>
       </div>
 
-      <div className="flex relative items-center justify-center w-full h-screen lg:hidden overflow-hidden">
+      <div className="flex relative items-center justify-center w-full h-[90vh] lg:hidden overflow-hidden">
           <svg
               viewBox="0 0 311 191"
               fill="none"
