@@ -15,7 +15,18 @@ import { FreeMode, Pagination } from "swiper/modules";
 gsap.registerPlugin(ScrollTrigger);
 
 const Images = () => {
-  const parent = useRef();
+  const parentmobile = useRef();
+  const mainImgmobile = useRef();
+  const middleImgmobile = useRef();
+  const lastImgmobile = useRef();
+  const head1mobile = useRef();
+  const head2mobile = useRef();
+  const head3mobile = useRef();
+  const head4mobile = useRef();
+  const head5mobile = useRef();
+  const head6mobile = useRef();
+
+  const parentdesk = useRef();
   const mainImg = useRef();
   const middleImg = useRef();
   const lastImg = useRef();
@@ -26,40 +37,167 @@ const Images = () => {
   const head5 = useRef();
   const head6 = useRef();
 
-  const parentFooter = useRef();
 
   useGSAP(() => {
-    const tl = gsap.timeline();
+    const tl1 = gsap.timeline();
 
-    tl.to(mainImg.current, {
+    tl1.to(mainImgmobile.current, {
       y: "-50%",
       width: "100%",
       height: "100%",
       scrollTrigger: {
-        trigger: parent.current,
+        trigger: parentmobile.current,
         start: "top 65%",
         end: "top 10%",
         scrub: 2,
       },
     });
-    tl.to(parent.current,{
+    tl1.to(parentmobile.current,{
       scrollTrigger:{
-        trigger: parent.current,
+        trigger: parentmobile.current,
         start: "top top",
         end: "top -450%",
         pin: true,
         scrub: 2,
       }
     })
-    tl.to(middleImg.current, {
+    tl1.to(middleImgmobile.current, {
+      top: "17%",
+      scrollTrigger:{
+        trigger: parentmobile.current,
+        scrub: 1,
+        start: "top 0%",
+      }
+    })
+    tl1.to(head1mobile.current, {
+      x: '157%',
+      fontWeight: "700",
+      letterSpacing: "-1px",
+      duration: 10,
+      repeat: 1,
+      yoyo: true,
+      scrollTrigger:{
+        trigger: parentmobile.current,
+        start: "top 0%",
+        end: "top -200%",
+        scrub: 2,
+      }
+    }, "h")
+    tl1.to(head2mobile.current, {
+      x: '-160%',
+      fontWeight: "700",
+      letterSpacing: "-1px",
+      duration: 10,
+      repeat: 1,
+      yoyo: true,
+      scrollTrigger:{
+        trigger: parentmobile.current,
+        start: "top 0%",
+        end: "top -200%",
+        scrub: 2,
+      }
+    }, "h")
+    tl1.to(head3mobile.current, {
+      x: '203.5%',
+      duration: 10,
+      fontWeight: "700",
+      letterSpacing: "-1px",
+      repeat: 1,
+      yoyo: true,
+      scrollTrigger:{
+        trigger: parentmobile.current,
+        start: "top 0%",
+        end: "top -200%",
+        scrub: 2,
+      }
+    }, "h")
+    tl1.to(middleImgmobile.current, {
+      scale: [2],
+      duration: 9000,
+      scrollTrigger:{
+        trigger: middleImgmobile.current,
+        start: "top 30%",
+        end: "top 0%",
+        scrub: 4,
+      }
+    })
+    tl1.to(lastImgmobile.current, {
+      top: "17%",
+      // duration: 10000,
+      scrollTrigger:{
+        trigger: middleImgmobile.current,
+        start: "top 50%",
+        scrub: 2,
+      }
+    }, "i")
+    tl1.to(head4mobile.current, {
+      x: '310%',
+      fontWeight: "700",
+      letterSpacing: "-1px",
+      duration: 10,
+      scrollTrigger:{
+        trigger: lastImgmobile.current,
+        start: "top -50%",
+        end: "top -200%",
+        scrub: 2,
+      }
+    }, "i")
+    tl1.to(head5mobile.current, {
+      x: '-260%',
+      fontWeight: "700",
+      letterSpacing: "-1px",
+      duration: 10,
+      scrollTrigger:{
+        trigger: lastImgmobile.current,
+        start: "top -50%",
+        end: "top -200%",
+        scrub: 2,
+      }
+    }, "i")
+    tl1.to(head6mobile.current, {
+      x: '257%',
+      duration: 10,
+      fontWeight: "700",
+      letterSpacing: "-1px",
+      scrollTrigger:{
+        trigger: lastImgmobile.current,
+        start: "top -50%",
+        end: "top -200%",
+        scrub: 2,
+      }
+    }, "i")
+
+    const tl2 = gsap.timeline();
+
+    tl2.to(mainImg.current, {
+      y: "-50%",
+      width: "100%",
+      height: "100%",
+      scrollTrigger: {
+        trigger: parentdesk.current,
+        start: "top 65%",
+        end: "top 10%",
+        scrub: 2,
+      },
+    });
+    tl2.to(parentdesk.current,{
+      scrollTrigger:{
+        trigger: parentdesk.current,
+        start: "top top",
+        end: "top -450%",
+        pin: true,
+        scrub: 2,
+      }
+    })
+    tl2.to(middleImg.current, {
       top: "5%",
       scrollTrigger:{
-        trigger: parent.current,
+        trigger: parentdesk.current,
         scrub: 1,
         start: "top 0%",
       }
     }, "h")
-    tl.to(head1.current, {
+    tl2.to(head1.current, {
       x: '133%',
       fontWeight: "700",
       letterSpacing: "-8px",
@@ -67,13 +205,13 @@ const Images = () => {
       repeat: 1,
       yoyo: true,
       scrollTrigger:{
-        trigger: parent.current,
+        trigger: parentdesk.current,
         start: "top 0%",
         end: "top -200%",
         scrub: 2,
       }
     }, "h")
-    tl.to(head2.current, {
+    tl2.to(head2.current, {
       x: '-115%',
       fontWeight: "700",
       letterSpacing: "-8px",
@@ -81,13 +219,13 @@ const Images = () => {
       repeat: 1,
       yoyo: true,
       scrollTrigger:{
-        trigger: parent.current,
+        trigger: parentdesk.current,
         start: "top 0%",
         end: "top -200%",
         scrub: 2,
       }
     }, "h")
-    tl.to(head3.current, {
+    tl2.to(head3.current, {
       x: '140%',
       duration: 10,
       fontWeight: "700",
@@ -95,13 +233,13 @@ const Images = () => {
       repeat: 1,
       yoyo: true,
       scrollTrigger:{
-        trigger: parent.current,
+        trigger: parentdesk.current,
         start: "top 0%",
         end: "top -200%",
         scrub: 2,
       }
     }, "h")
-    tl.to(middleImg.current, {
+    tl2.to(middleImg.current, {
       scale: [2],
       duration: 9000,
       scrollTrigger:{
@@ -111,7 +249,7 @@ const Images = () => {
         scrub: 4,
       }
     })
-    tl.to(lastImg.current, {
+    tl2.to(lastImg.current, {
       top: "5.5%",
       // duration: 10000,
       scrollTrigger:{
@@ -120,7 +258,7 @@ const Images = () => {
         scrub: 2,
       }
     }, "i")
-    tl.to(head4.current, {
+    tl2.to(head4.current, {
       x: '200%',
       fontWeight: "700",
       letterSpacing: "-8px",
@@ -132,7 +270,7 @@ const Images = () => {
         scrub: 2,
       }
     }, "i")
-    tl.to(head5.current, {
+    tl2.to(head5.current, {
       x: '-135%',
       fontWeight: "700",
       letterSpacing: "-8px",
@@ -144,7 +282,7 @@ const Images = () => {
         scrub: 2,
       }
     }, "i")
-    tl.to(head6.current, {
+    tl2.to(head6.current, {
       x: '180%',
       duration: 10,
       fontWeight: "700",
@@ -161,7 +299,38 @@ const Images = () => {
   return (
     <div className="w-full">
       <div className="relative max-w-screen-xl mx-auto w-full h-full bg-white overflow-hidden">
-        <div ref={parent} className="hidden relative w-full md:flex h-[100vh] overflow-hidden">
+        <div ref={parentmobile} className="flex md:hidden relative w-full h-[100vh] overflow-hidden">
+          <img ref={mainImgmobile} className="absolute w-[29.5vw] h-[50vh] object-cover left-1/2 -translate-x-1/2 top-1/2 -translate-y-[-10%]"
+            src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-1.b140c7aa360fee7b7b6af5ba73560924.webp"
+            alt=""
+          />
+          <img ref={middleImgmobile} className="absolute w-[49.6vw] h-[66vh] object-cover left-1/2 -translate-x-1/2 top-[150%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-2.cfe8225bd6e52170e551f8a5739b3492.webp"
+            alt=""
+          />
+          <h1 ref={head1mobile} className="absolute top-40 left-[-600px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+            EXPLOREZ DE
+          </h1>
+          <h1 ref={head2mobile} className="absolute top-[42%] right-[-500px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+            NOUVEAUX
+          </h1>
+          <h1 ref={head3mobile} className="absolute bottom-20 left-[-600px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+            HORIZONS
+          </h1>
+          <img ref={lastImgmobile} className="absolute w-[49.6vw] h-[66vh] object-cover left-1/2 -translate-x-1/2 top-[120%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-3.6e5425847547c4b4bf037ca5d760fa5f.webp"
+            alt=""
+          />
+          <h1 ref={head4mobile} className="absolute top-40 left-[-800px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+            DANS UN
+          </h1>
+          <h1 ref={head5mobile} className="absolute top-[42%] right-[-700px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+            CONFORT
+          </h1>
+          <h1 ref={head6mobile} className="absolute bottom-20 left-[-600px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
+            ABSOLU
+          </h1>
+        </div>
+
+        <div ref={parentdesk} className="hidden relative w-full md:flex h-[100vh] overflow-hidden">
           <img ref={mainImg} className="absolute w-[29.5vw] h-[50vh] object-cover left-1/2 -translate-x-1/2 top-1/2 -translate-y-[-10%]"
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-1.b140c7aa360fee7b7b6af5ba73560924.webp"
             alt=""
@@ -192,7 +361,7 @@ const Images = () => {
           </h1>
         </div>
 
-        <div ref={parentFooter} className="absolute w-full h-[100%] left-1/2 -translate-x-1/2 top-[81.8%] items-center">
+        <div className="absolute w-full h-[100%] left-1/2 -translate-x-1/2 top-[81.8%] items-center overflow-hidden">
           <img
             className="absolute w-full h-screen scale-[2.47] md:scale-[1] object-cover pb-[10.4vw] md:pb-0"
           src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/bg.6f060e16cb5802b780a013714307f463.jpg"
@@ -260,7 +429,7 @@ const Images = () => {
             <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] md:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   );
 };

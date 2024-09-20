@@ -320,7 +320,7 @@ const Shoes = () => {
       </div>
 
       <div className="relative flex md:hidden mobShowSwiperSection w-full h-screen">
-        <div className="absolute w-full h-[17.1vh] bg-yellow-400 text-center">
+        <div className="absolute w-full h-[17.1vh] text-center">
           <img className="w-full h-full object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-1-full.81784bff1664822c59280a8487bf463a.jpg" alt="" />
         </div>
 
