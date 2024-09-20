@@ -304,7 +304,7 @@ const Images = () => {
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-1.b140c7aa360fee7b7b6af5ba73560924.webp"
             alt=""
           />
-          <img ref={middleImgmobile} className="absolute w-[49.6vw] h-[66vh] object-cover left-1/2 -translate-x-1/2 top-[150%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-2.cfe8225bd6e52170e551f8a5739b3492.webp"
+          <img ref={middleImgmobile} className="absolute w-[49.6vw] h-[66vh] object-cover left-1/2 -translate-x-1/2 top-[150vh]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-2.cfe8225bd6e52170e551f8a5739b3492.webp"
             alt=""
           />
           <h1 ref={head1mobile} className="absolute top-40 left-[-600px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
