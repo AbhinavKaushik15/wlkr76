@@ -3,11 +3,25 @@ import Navbar from "./components/Navbar";
 import Shoes from "./components/Shoes";
 import Images from "./components/Images";
 import Video from "./components/Video";
-import LocomotiveScroll from "locomotive-scroll";
 import "./App.css";
+import Lenis from 'lenis';
+import { useEffect } from "react";
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  useEffect(()=>{
+    const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+  })
 
   return (
     <div style={{fontFamily: "'Roboto Flex', sans-serif"}} className="relative w-full min-h-screen font-[Roboto Flex Thin]">
