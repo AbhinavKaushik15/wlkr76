@@ -119,11 +119,11 @@ const Shoes = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full max-w-screen-xl mx-auto">
-      <div ref={child1} className="hidden relative w-full h-screen bg-white md:flex pt-[105px] justify-center gap-14">
+      <div className="w-full max-w-screen-xl mx-auto overflow-hidden">
+      <div ref={child1} className="hidden relative w-full h-screen bg-white lg:flex pt-[105px] justify-center gap-14">
         {seventySix.map((items, index)=>{
-          return <div key={index} className="relative left h-[80vh] w-[24vw] flex flex-col items-center">
-          <div onMouseEnter={()=>sethover(index)} onMouseLeave={()=>sethover(null)} className="76kiki relative mt-3 w-full h-52">
+          return <div key={index} className="relative left h-[80vw] w-[24vw] flex flex-col items-center gap-[5.4vw]">
+          <div onMouseEnter={()=>sethover(index)} onMouseLeave={()=>sethover(null)} className="76kiki relative mt-[2.5vw] w-full h-52">
             <svg
               // width="248"
               // height="128"
@@ -185,21 +185,21 @@ const Shoes = () => {
             />
           </div>
 
-          <h1 className="font-[Roboto_Mono] text-[12px] tracking-widest mt-10">
+          <h1 className="font-[Roboto_Mono] text-[12px] tracking-widest text-center -mt-[2.1vw]">
             WLKR 76
+            <p className="text-[12px] tracking-widest">{items.shoeName}</p>
+            <p className="text-[12px] tracking-widest pt-6">76€</p>
           </h1>
-          <p className="text-[12px] tracking-widest mt-1">{items.shoeName}</p>
 
-          <p className="text-[12px] tracking-widest mt-5">76€</p>
 
-          <button style={{backgroundColor: items.btnbg}} className="mt-[75px] tracking-tighter py-2 px-10 rounded-full text-white font-[900] hover:px-[45px] hover:transition-all hover:duration-200">
+          <button style={{backgroundColor: items.btnbg}} className="tracking-tighter py-[9px] px-10 rounded-full text-white font-[900] hover:px-[45px] hover:transition-all hover:duration-200">
             AJOUTER AU PANIER
           </button>
         </div>
         })}
       </div>
 
-      <div ref={contain} className="hidden xl:flex relative w-full h-[100vh] bg-white overflow-hidden">
+      <div ref={contain} className="hidden lg:flex relative w-full h-[100vh] bg-white overflow-hidden">
         <div className="">
           <div className="left_side">
             <div>
@@ -224,14 +224,14 @@ const Shoes = () => {
             </div>
 
             <div>
-              <img ref={secImg} className="absolute z-10 w-[33.1vw] h-[96vh] object-cover left-1/2 -translate-x-1/2 top-[50vh] -translate-y-[-10%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-1-zoom.1f2b13036e579fbda39ce2f8595e717e.jpg"
+              <img ref={secImg} className="absolute z-10 w-[33.1vw] lg:h-[77vh] xl:h-[96vh] object-cover left-1/2 -translate-x-1/2 top-[50vh] -translate-y-[-10%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-1-zoom.1f2b13036e579fbda39ce2f8595e717e.jpg"
                 alt=""
               />
-              <img ref={secImg2} className="absolute z-[99] w-[33.1vw] h-[96.65vh] object-cover left-1/2 translate-x-1/2 top-1/2 -translate-y-1/2"
+              <img ref={secImg2} className="absolute z-[99] w-[33.1vw] lg:h-[77vh] xl:h-[96.65vh] object-cover left-1/2 translate-x-1/2 top-1/2 -translate-y-1/2"
                 src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-3-zoom.6953b561b929aa19c4eab6c65c8adac6.jpg"
                 alt=""
               />
-              <img ref={secImg3} className="absolute z-[100] w-[33.2vw] h-[97vh] object-cover left-1/2 translate-x-1/2 top-1/2 -translate-y-1/2" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-2-zoom.e1e6e3435afcff175ea2c09bcda0b543.jpg" alt=""
+              <img ref={secImg3} className="absolute z-[100] w-[33.2vw] lg:h-[77vh] xl:h-[97vh] object-cover left-1/2 translate-x-1/2 top-1/2 -translate-y-1/2" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-2-zoom.e1e6e3435afcff175ea2c09bcda0b543.jpg" alt=""
               />
             </div>
           </div>
@@ -246,7 +246,7 @@ const Shoes = () => {
               }}
               className="right_side absolute w-[33.3%] h-screen bg-white right-0 top-0 z-[999]"
             >
-              <SwiperSlide ref={slide1} className="w-[33.3%] h-full flex flex-col items-center">
+              <SwiperSlide ref={slide1} className="relative w-[33.3%] h-full flex flex-col items-center">
                 <div className="mt-[21%] flex flex-col">
                   <h1 className="font-[Roboto_Flex_Thin] font-[900] text-7xl text-[#E8D2AC] tracking-[-4px] ml-6">
                     01
@@ -262,11 +262,8 @@ const Shoes = () => {
                   alt=""
                 />
 
-                <h1 className="font-[sans_serif] text-sm tracking-wider w-[60%] text-center mt-10">
-                  <p>Semelle extérieure en</p>
-                  <p>caoutchouc avec crapmons pour</p>
-                  <p>une accroche sur toutes les</p>
-                  <p>surfaces</p>
+                <h1 className="font-[sans_serif] text-sm tracking-wider lg:w-[42%] xl:w-[35%] text-center mt-10">
+                  Semelle extérieure en caoutchouc avec crapmons pour une accroche sur toutes les surfaces
                 </h1>
               </SwiperSlide>
 
@@ -286,8 +283,8 @@ const Shoes = () => {
                     alt=""
                   />
 
-                  <h1 className="font-[sans_serif] text-sm tracking-wider w-[58%] text-center mt-[17.3%]">
-                    <p>Naturellement résistant</p>
+                  <h1 className="font-[sans_serif] text-sm tracking-wider lg:w-[42%] xl:w-[35%] text-center mt-[17.3%]">
+                    Naturellement résistant
                   </h1>
               </SwiperSlide>
 
@@ -307,19 +304,18 @@ const Shoes = () => {
                     alt=""
                   />
 
-                  <h1 className="font-[sans_serif] text-sm tracking-wider w-[58%] text-center mt-[15%]">
-                    <p>Semelle intermédiaier avec un</p>
-                    <p>amorti moelleux et durable</p>
+                  <h1 className="font-[sans_serif] text-sm tracking-wider lg:w-[42%] xl:w-[35%] text-center mt-[15%]">
+                    Semelle intermédiaier avec un amorti moelleux et durable
                   </h1>
               </SwiperSlide>
             </Swiper>
           </div>
         </div>
 
-        <div ref={loader} className="hidden xl:flex absolute z-[9999] w-0 h-[6px] bg-[#545841] left-0 top-[99vh] overflow-hidden"></div>
+        <div ref={loader} className="hidden lg:flex absolute z-[9999] w-0 h-[6px] bg-[#545841] left-0 top-[99vh] overflow-hidden"></div>
       </div>
 
-      <div className="relative flex md:hidden mobShowSwiperSection w-full h-screen">
+      <div className="relative flex lg:hidden mobShowSwiperSection w-full h-screen">
         <div className="absolute w-full h-[17.1vh] text-center">
           <img className="w-full h-full object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/specs/specs-1-full.81784bff1664822c59280a8487bf463a.jpg" alt="" />
         </div>

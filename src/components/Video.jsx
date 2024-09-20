@@ -299,7 +299,7 @@ const Video = () => {
       </div>
 
       <div ref={parentRail} className="relative w-full min-h-screen max-w-screen-xl mx-auto bg-white overflow-hidden">
-        <img className="flex lg:hidden w-full h-full object-contain mt-[13.9vh] object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
+        <img className="flex lg:hidden w-full h-full mt-[13.9vh] object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
         <div ref={roll1} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-28">
           <img
             className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"
@@ -418,11 +418,11 @@ const Video = () => {
         </div>
       </div>
 
-      <div className="flex relative items-center justify-center w-full h-screen md:hidden overflow-hidden">
+      <div className="flex relative items-center justify-center w-full h-screen lg:hidden overflow-hidden">
           <svg
               viewBox="0 0 311 191"
               fill="none"
-              className="w-[67.5vw] absolute top-[29.35vw] left-1/2 -translate-x-1/2"
+              className="w-[67.5vw] absolute top-[29.35vw] md:top-[27.5vw] left-1/2 -translate-x-1/2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask
@@ -444,13 +444,41 @@ const Video = () => {
               />
           </svg>
 
+          <div className="hidden z-[10] w-full md:flex lg:hidden px-[8.9vw] mt-[32.5vw]">
+            <div className="black w-[29.5vw] flex flex-col items-center">
+              <img className="w-[21vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-kaki.41175d1d470cc18fea4039d9d4a2bdca.webp" alt="" />
+
+              <h1 className="text-sm mt-3">WLKR 76</h1>
+              <p className="text-sm tracking-wider">Kaki</p>
+
+              <p className="text-xs mt-5">76€</p>
+            </div>
+
+            <div className="white w-[29.5vw] flex flex-col items-center">
+              <img className="w-[21vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-white.e88209e1cebbe8c106738c487b070a47.webp" alt="" />
+
+              <h1 className="text-sm mt-3">WLKR 76</h1>
+              <p className="text-sm tracking-wider">Beige</p>
+
+              <p className="text-xs mt-5">76€</p>
+            </div>
+
+            <div className="purple w-[29.5vw] flex flex-col items-center">
+              <img className="w-[21vw]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />
+              <h1 className="text-sm mt-3">WLKR 76</h1>
+              <p className="text-sm tracking-wider">Violet</p>
+
+              <p className="text-xs mt-5">76€</p>
+            </div>
+          </div>
+
           <Swiper
             slidesPerView={3}
             spaceBetween={-130}
             loop = {[true]}
             pagination={{clickable: true}}
             modules={[Pagination]}
-            className="absolute w-full top-[40vw] mySwiper"
+            className="flex md:hidden absolute w-full top-[40vw] mySwiper"
             >
             <SwiperSlide className="ml-[25vw]">
               <img className="w-[100vh]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />

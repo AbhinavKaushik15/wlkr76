@@ -304,7 +304,7 @@ const Images = () => {
             src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-1.b140c7aa360fee7b7b6af5ba73560924.webp"
             alt=""
           />
-          <img ref={middleImgmobile} className="absolute w-[49.6vw] h-[66vh] object-cover left-1/2 -translate-x-1/2 top-[150vh]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-2.cfe8225bd6e52170e551f8a5739b3492.webp"
+          <img ref={middleImgmobile} className="absolute w-[49.6vw] h-[66vh] object-cover left-1/2 -translate-x-1/2 top-[150%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-2.cfe8225bd6e52170e551f8a5739b3492.webp"
             alt=""
           />
           <h1 ref={head1mobile} className="absolute top-40 left-[-600px] text-[68px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
@@ -363,7 +363,7 @@ const Images = () => {
 
         <div className="absolute w-full h-[100%] left-1/2 -translate-x-1/2 top-[81.8%] items-center overflow-hidden">
           <img
-            className="absolute w-full h-screen scale-[2.47] md:scale-[1] object-cover pb-[10.4vw] md:pb-0"
+            className="absolute w-full h-screen scale-[2.47] md:scale-[3.68] lg:scale-[1] object-cover pb-[10.4vw] md:pb-[6.9vw] lg:pb-0"
           src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/bg.6f060e16cb5802b780a013714307f463.jpg"
           alt=""
           />
@@ -424,9 +424,9 @@ const Images = () => {
             })}
           </Swiper>
 
-          <div className="absolute mt-[17.5vh] lg:mt-20 xl:mt-[3.25%] flex flex-col md:flex-row items-center justify-between px-[6%] w-full">
-            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] md:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
-            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] md:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
+          <div className="absolute top-72 sm:mt-[257px] md:mt-[257px] lg:mt-20 xl:mt-[3.25%] flex flex-col lg:flex-row items-center justify-between px-[6%] w-full">
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] lg:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] lg:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
           </div>
         </div>
       </div>
