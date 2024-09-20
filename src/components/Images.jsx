@@ -374,7 +374,7 @@ const Images = () => {
             freeMode={true}
             pagination={{ clickable: true }}
             modules={[FreeMode, Pagination]}
-            className="desktop hidden w-[100vw] md:flex mySwiper pt-[14.8%]"
+            className="desktop hidden w-[100vw] md:flex mySwiper md:pt-[14vw] lg:pt-[18.5vw] xl:pt-[14.8vw]"
           >
             {[{src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-1.1b97614d41e5837270d6552372c3c84b.webp", marginLeft: "25%"},
             {src: "https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/lookbook/lookbook-2.b859e947584b0d00529b89cd390c4479.webp"},
@@ -424,9 +424,9 @@ const Images = () => {
             })}
           </Swiper>
 
-          <div className="absolute top-72 sm:mt-[257px] md:mt-[257px] lg:mt-20 xl:mt-[3.25%] flex flex-col lg:flex-row items-center justify-between px-[6%] w-full">
-            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] lg:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
-            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] lg:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
+          <div className="absolute mt-[159px] sm:mt-[257px] md:mt-[257px] lg:mt-[200px] xl:mt-[3.25%] flex flex-col xl:flex-row items-center justify-between xl:px-[6%] w-full">
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] xl:text-xs">©️ DECATHLON 2024 ALL RIGHT RESERVED</h1>
+            <h1 className="text-white font-[Roboto_Flex_Thin] font-[700] tracking-tighter text-[10px] xl:text-xs"><a className="underline hover:text-[#dadada]" href="#">LEGAL MENTIONS</a> • WEBSITE BY <a className="underline hover:text-[#dadada]" href="#">INDEX.STUDIO</a></h1>
           </div>
         </div>
       </div>
