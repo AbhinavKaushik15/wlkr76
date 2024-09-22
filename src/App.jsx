@@ -29,6 +29,7 @@ requestAnimationFrame(raf)
       <Video />
       <Shoes />
       <Images />
+      
     </div>
   );
 }

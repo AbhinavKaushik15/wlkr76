@@ -192,7 +192,7 @@ const Shoes = () => {
           </h1>
 
 
-          <button style={{backgroundColor: items.btnbg}} className="tracking-tighter py-[9px] px-10 rounded-full text-white font-[900] hover:px-[45px] hover:transition-all hover:duration-200">
+          <button style={{backgroundColor: items.btnbg}} className="tracking-tighter py-[9px] px-10 rounded-full text-white font-[900] hover:px-[45px] hover:py-[10px] hover:transition-all hover:duration-200">
             AJOUTER AU PANIER
           </button>
         </div>
