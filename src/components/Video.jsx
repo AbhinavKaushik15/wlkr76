@@ -300,6 +300,7 @@ const Video = () => {
 
       <div ref={parentRail} className="relative w-full min-h-screen bg-white overflow-hidden">
         <img className="flex lg:hidden w-full h-full mt-[13.9vh] object-cover" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/typo/tagline-mobile.a34c5e76765c666f291b6b7750af1bc2.png" alt="" />
+        
         <div ref={roll1} className="hidden w-full h-[25vh] lg:flex items-center gap-10 -ml-28">
           <img
             className="w-[24vw] h-[17.6vh] object-cover flex-shrink-0"
@@ -480,6 +481,7 @@ const Video = () => {
             modules={[Pagination]}
             className="flex md:hidden absolute w-full top-[40vw] mySwiper"
             >
+              {[]}
             <SwiperSlide className="ml-[25vw]">
               <img className="w-[100vh]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/buy/recirc-product-pink.e3719fc3c6d1c689598c81a224cdb41f.webp" alt="" />
               <h1 className="ml-[17vw] text-sm pt-6">WLKR 76</h1>

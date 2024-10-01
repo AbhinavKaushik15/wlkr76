@@ -78,7 +78,7 @@ const Images = () => {
       yoyo: true,
       scrollTrigger:{
         trigger: parentmobile.current,
-        start: "top 0%",
+        start: "top 20%",
         end: "top -200%",
         scrub: 2,
       }
@@ -92,7 +92,7 @@ const Images = () => {
       yoyo: true,
       scrollTrigger:{
         trigger: parentmobile.current,
-        start: "top 0%",
+        start: "top 20%",
         end: "top -200%",
         scrub: 2,
       }
@@ -106,7 +106,7 @@ const Images = () => {
       yoyo: true,
       scrollTrigger:{
         trigger: parentmobile.current,
-        start: "top 0%",
+        start: "top 20%",
         end: "top -200%",
         scrub: 2,
       }
@@ -201,57 +201,52 @@ const Images = () => {
       x: '133%',
       fontWeight: "700",
       letterSpacing: "-8px",
-      duration: 10000,
       repeat: 1,
       yoyo: true,
       scrollTrigger:{
         trigger: parentdesk.current,
         start: "top 0%",
         end: "top -200%",
-        scrub: 5,
+        scrub: 2,
       }
     }, "h")
     tl2.to(head2.current, {
       x: '-115%',
       fontWeight: "700",
       letterSpacing: "-8px",
-      duration: 10000,
       repeat: 1,
       yoyo: true,
       scrollTrigger:{
         trigger: parentdesk.current,
         start: "top 0%",
         end: "top -200%",
-        scrub: 5,
+        scrub: 2,
       }
     }, "h")
     tl2.to(head3.current, {
       x: '140%',
       fontWeight: "700",
       letterSpacing: "-8px",
-      duration: 10000,
       repeat: 1,
       yoyo: true,
       scrollTrigger:{
         trigger: parentdesk.current,
         start: "top 0%",
         end: "top -200%",
-        scrub: 5,
+        scrub: 2,
       }
     }, "h")
     tl2.to(middleImg.current, {
       scale: [2.49],
-      duration: 9000,
       scrollTrigger:{
         trigger: middleImg.current,
         start: "top 30%",
         end: "top 0%",
-        scrub: 4,
+        scrub: 2,
       }
     })
     tl2.to(lastImg.current, {
       top: "5.5%",
-      // duration: 10000,
       scrollTrigger:{
         trigger: middleImg.current,
         start: "top 50%",
@@ -262,36 +257,33 @@ const Images = () => {
       x: '200%',
       fontWeight: "700",
       letterSpacing: "-8px",
-      duration: 10000,
       scrollTrigger:{
         trigger: lastImg.current,
-        start: "top -50%",
-        end: "top -200%",
-        scrub: 5,
+        start: "top 10%",
+        end: "top -100%",
+        scrub: 2,
       }
     }, "i")
     tl2.to(head5.current, {
       x: '-135%',
       fontWeight: "700",
       letterSpacing: "-8px",
-      duration: 10000,
       scrollTrigger:{
         trigger: lastImg.current,
-        start: "top -50%",
-        end: "top -200%",
-        scrub: 5,
+        start: "top 10%",
+        end: "top -100%",
+        scrub: 2,
       }
     }, "i")
     tl2.to(head6.current, {
       x: '180%',
-      duration: 10000,
       fontWeight: "700",
       letterSpacing: "-8px",
       scrollTrigger:{
         trigger: lastImg.current,
-        start: "top -50%",
-        end: "top -200%",
-        scrub: 5,
+        start: "top 10%",
+        end: "top -100%",
+        scrub: 2,
       }
     }, "i")
   });
@@ -347,7 +339,7 @@ const Images = () => {
           <h1 ref={head3} className="absolute -bottom-24 left-[-600px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">
             HORIZONS
           </h1>
-          <img ref={lastImg} className="absolute w-[33.57vw] h-[90vh] object-cover left-1/2 -translate-x-1/2 top-[120%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-3.6e5425847547c4b4bf037ca5d760fa5f.webp"
+          <img ref={lastImg} className="absolute w-[33.57vw] h-[90vh] object-cover left-1/2 -translate-x-1/2 top-[200%]" src="https://decathlon-wlkr76.index.studio/static/LandingPage/Sportswear/images/story/story-3.6e5425847547c4b4bf037ca5d760fa5f.webp"
             alt=""
           />
           <h1 ref={head4} className="absolute -top-20 left-[-800px] text-[150px] font-[100] tracking-[-35px] font-[Roboto_Flex_Thin] text-white">

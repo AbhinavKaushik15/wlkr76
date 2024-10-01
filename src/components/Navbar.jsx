@@ -12,10 +12,6 @@ const Navbar = () => {
         <button className="hidden lg:flex xl:flex tracking-tighter text-center py-[11.5px] px-[76px] text-[18px] rounded-full text-white font-[800] hover:px-[80px] hover:py-[12.5px] hover:transition-all hover:duration-200 bg-[#897460] xl:-mr-[1.5px] xl:mt-1">
           ACHETER
         </button>
-
-        {/* <button className="tracking-tighter text-center py-[11.5px] px-[76px] text-[18px] rounded-full text-white font-[800] hover:px-[45px] hover:py-[10px] hover:transition-all hover:duration-200">
-            AJOUTER AU PANIER
-          </button> */}
       </div>
       </div>
   )

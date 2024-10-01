@@ -6,6 +6,7 @@ import Video from "./components/Video";
 import "./App.css";
 import Lenis from 'lenis';
 import { useEffect } from "react";
+import Loader from "./components/Loader";
 
 function App() {
   useEffect(()=>{
@@ -24,12 +25,12 @@ requestAnimationFrame(raf)
 
   return (
     <div style={{fontFamily: "'Roboto Flex', sans-serif"}} className="relative w-full min-h-screen font-[Roboto Flex Thin]">
+      <Loader />
       <Navbar />
       <Home />
       <Video />
       <Shoes />
       <Images />
-      
     </div>
   );
 }
